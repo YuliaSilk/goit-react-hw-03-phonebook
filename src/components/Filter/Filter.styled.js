@@ -8,6 +8,7 @@ gap: 8px;
 export const TextToDo = styled.p`
 color: ${({ theme }) => theme.colors.acent};
 font-size: 14px;
+margin-bottom: 4px;
 `
 
 export const FilterInputStyle = styled.input`
