@@ -21,6 +21,11 @@ export class App extends Component {
     filter: '',
   }
 
+componentDidUpdate(pervProps, prevState){
+  console.log('prevProps', pervProps)
+  console.log('prevState', prevState)
+}
+  
 addContact = newContact => {
     if (this.state.contacts.some(contact => contact.name === newContact.name)){
     Notiflix.Notify.failure('this contact has already been added!');
